@@ -1,0 +1,28 @@
+{
+    "name": "hadi-aghandeh/aws-mediaconvert",
+    "description": "a package to easuly integrate with AWS MediaConvert",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "HadiAghandeh\\AwsMediaConvert\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "HadiAghandeh",
+            "email": "hadi.aghandeh@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "aws/aws-sdk-php": "^3.173",
+		"aws/aws-php-sns-message-validator": "^1.8"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HadiAghandeh\\AwsMediaConvert\\AwsMediaConvertServiceProvider"
+            ]
+        }
+    }
+}
